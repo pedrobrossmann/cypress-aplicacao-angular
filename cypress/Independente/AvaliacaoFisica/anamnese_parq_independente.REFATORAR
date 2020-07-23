@@ -1,0 +1,57 @@
+// E preciso refatorar o codigo para o novo modelo de avaliação. 
+
+
+
+// describe('Avaliação fisica ', function() {
+    
+//     beforeEach(function () {
+//         cy.viewport(1440, 900)
+//         cy.login(false)
+//     })
+
+//     it('Anamnese + parq (positivo)', function() {
+//         cy.get('#inputGlobalSearch').type('LANÇAR')
+//         cy.get('#global-search-lançar-avaliacao').click()
+//         cy.get(':nth-child(1) > .header-name').should('be.visible')
+//         cy.get('#buscarAlunos').type('Z_aluno Avaliação Anamnese E Parq')
+//         cy.wait(2000)
+//         cy.contains('NIVEL DA AVALIACAO FISICA')
+//         cy.get(':nth-child(1) > .header-name').click()
+//         cy.get('#criarAvaliacao').click()
+//         cy.get('[type="checkbox"]').first().check()
+//         cy.get('.row > .col-md-6 > pacto-select > .form-group > .form-control').select('ANAMNESE NORMAL')
+//         cy.preencheDadosAnamneseIndependente()
+//         cy.get('.content-column > .container-wrapper > .avaliacao > .avaliacao-abas > .aba:nth-child(2)').click()
+//         cy.preencheDadosParQIndependente()
+//         cy.contains('Negativo')
+//         cy.get('#41_sim').check()
+//         cy.contains('Positivo')
+//         cy.get('#btnSalvarAvaliacao').click()
+//         cy.contains('Avaliação criada com sucesso.')
+//         cy.get('#btnOpcoesAvaliacao').click({ force: true })
+//         cy.get('#btnRemoverAvaliacao').click()
+//         cy.contains('Avaliação removida com sucesso.')
+//     })
+
+//     it('Anamnese + parq (Negativo)', function() {
+//         cy.get('#inputGlobalSearch').type('LANÇAR')
+//         cy.get('#global-search-lançar-avaliacao').click()
+//         cy.get(':nth-child(1) > .header-name').should('be.visible')
+//         cy.get('#buscarAlunos').type('Z_ ALUNO DOIS PARA CRIACAO DE ANAMNESE')
+//         cy.wait(4000)
+//         cy.contains('NIVEL DA AVALIACAO FISICA')
+//         cy.get(':nth-child(1) > .header-name').click()
+//         cy.get('#criarAvaliacao').click()
+//         cy.get('[type="checkbox"]').first().check()
+//         cy.get('.row > .col-md-6 > pacto-select > .form-group > .form-control').select('ANAMNESE NORMAL')
+//         cy.preencheDadosAnamneseIndependente()
+//         cy.get('.content-column > .container-wrapper > .avaliacao > .avaliacao-abas > .aba:nth-child(2)').click()
+//         cy.preencheDadosParQIndependente()
+//         cy.contains('Negativo')
+//         cy.get('#btnSalvarAvaliacao').click()
+//         cy.contains('Avaliação criada com sucesso.')
+//         cy.get('#btnOpcoesAvaliacao').click({ force: true })
+//         cy.get('#btnRemoverAvaliacao').click()
+//         cy.contains('Avaliação removida com sucesso.')
+//     })
+// })
